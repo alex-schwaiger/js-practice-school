@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title id="myTitle">Template</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="page-header" class="bg-dark text-white col-sm-12">
+        <h1 id="myHeading" class="text-center">fooHeading</h1>
+      </header>
+      <p></p>
+      <form id="albumForm" class="row g-3">
+        <div class="col-md-6">
+          <label for="album" class="form-label">Album</label>
+          <input type="text" class="form-control" id="title" name="title" />
+        </div>
+        <div class="col-md-6">
+          <label for="artist" class="form-label">Künstler</label>
+          <input type="text" class="form-control" id="artist" name="artist" />
+        </div>
+        <div class="col-md-6">
+          <label for="duration" class="form-label">Länge des Albums</label>
+          <input
+            type="text"
+            class="form-control"
+            id="duration"
+            name="duration"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="releaseYear" class="form-label">Erscheinungsjahr</label>
+          <input
+            type="text"
+            class="form-control"
+            id="releaseYear"
+            name="releaseYear"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="rating" class="form-label">Bewertung</label>
+          <input
+            type="number"
+            class="form-control"
+            id="rating"
+            name="rating"
+            min="1"
+            max="10"
+          />
+        </div>
+
+        <div class="col-12 mt-4">
+          <button type="submit" class="btn btn-primary">Hinzufügen</button>
+        </div>
+      </form>
+      <form id="searchArtistForm" class="row g-3 mt-4">
+        <div class="col-md-6">
+          <label for="searchArtistInput" class="form-label"
+            >Name des Künstlers</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="searchArtistInput"
+            name="searchArtistInput"
+          />
+        </div>
+        <div class="col-md-6 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary">Suchen</button>
+        </div>
+      </form>
+      <form id="deleteAllAbulmsByArtist" class="row g-3 mt-4">
+        <div class="col-md-6">
+          <label for="artistInput" class="form-label">Name des Künstlers</label>
+          <input
+            type="text"
+            class="form-control"
+            id="artistInput"
+            name="artistInput"
+          />
+        </div>
+        <div class="col-md-6 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary">Löschen</button>
+        </div>
+      </form>
+      <table class="table mt-4" id="dynamic-table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Title</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Release Year</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="my-4">
+        <div id="output"></div>
+      </div>
+      <button id="deleteAllAlbums" class="btn btn-primary">Clear</button>
+      <button id="ratingStatistics" class="btn btn-primary">
+        Statistiken anzeigen
+      </button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

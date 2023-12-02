@@ -1,0 +1,11 @@
+html {
+  font-family: 'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
+}
+
+#error {
+  color: red;
+}
+
+.commentheader {
+  color: rgb(90, 15, 38);
+}
