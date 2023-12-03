@@ -1,0 +1,69 @@
+// Anfang
+{
+  "php.validate.executablePath": "c:/xampp/php/php.exe",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.wordWrap": "on",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.mouseWheelZoom": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 1,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "breadcrumbs.enabled": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontFamily": "Hack, Monaco, Menlo, Consolas, 'Droid Sans Mono', 'Inconsolata', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "php.suggest.basic": false,
+  "emmet.includeLanguages": {
+    "blade": "html"
+  },
+  "editor.tabCompletion": "on",
+  "php.validate.run": "onType",
+  "terminal.integrated.profiles.windows": {
+    "my-pwsh": {
+      "source": "PowerShell",
+      "args": ["-NoProfile"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "my-pwsh",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": false,
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "gitlens.advanced.telemetry.enabled": false,
+  "files.hotExit": "off",
+  "eslint.alwaysShowStatus": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.enabled": false,
+  "files.exclude": {
+    ".github": true,
+    "**/bowser_components": true,
+    "**/node_modules": true
+  },
+  "telemetry.telemetryLevel": "off",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true
+  // "prettier.printWidth": 120
+}
+
+// Ende
