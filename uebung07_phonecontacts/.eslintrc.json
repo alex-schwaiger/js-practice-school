@@ -1,0 +1,40 @@
+{
+  "babel-eslint": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "globals": {
+    "Promise": "off",
+    "assert": "off",
+    "chai": "off"
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "indent": ["warn", 4],
+    "brace-style": ["warn", "1tbs"],
+    "quotes": ["warn", "single"],
+    "semi": ["error", "always"],
+    "no-console": ["off"],
+    "no-unused-vars": [
+      "warn",
+      {
+        "varsIgnorePattern": "should|expect"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js", "*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "warn",
+        "no-undef": "off"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+// Anfang workspace settings
+{
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.wordWrap": "on",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.mouseWheelZoom": true,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 1,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "breadcrumbs.enabled": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontFamily": "Hack, Monaco, Menlo, Consolas, 'Droid Sans Mono', 'Inconsolata', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "php.suggest.basic": false,
+  "emmet.includeLanguages": {
+    "blade": "html"
+  },
+  "editor.tabCompletion": "on",
+  "php.validate.run": "onType",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": false,
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false
+}
+// Ende workspace settings
