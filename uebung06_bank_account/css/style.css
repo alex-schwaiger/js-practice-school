@@ -1,0 +1,28 @@
+html {
+  font-family: 'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.commentheader {
+  color: rgb(90, 15, 38);
+}
+
+#error-field {
+  margin-top: 25px;
+  border: 3px solid rgb(218, 30, 30);
+  background-color: rgba(218, 30, 30, 0.57);
+  display: none;
+}
+
+#succed-field {
+  margin-top: 25px;
+  border: 3px solid rgb(30, 218, 30);
+  background-color: rgba(30, 218, 30, 0.57);
+  display: none;
+}
+
+#error-info,
+#succed-info {
+  text-align: center;
+  color: white;
+  padding: 10px 15px;
+}

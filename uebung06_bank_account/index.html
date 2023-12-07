@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title id="myTitle">Vorlage</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="page-header" class="bg-dark text-white col-sm-12">
+        <h1 id="myHeading1" class="text-center"></h1>
+      </header>     
+      <div class="jumbotron">
+        <h3>Neuen Kunden anlegen:</h3>
+        <form id="customerForm">
+          <div> Bankname: </div>
+          <div><input type="text" name="bankName"> </div>      
+          <div> Kontonummer: </div> 
+          <div><input type="text" name="accountNumber"> </div>
+          <div> Bankleitzahl: </div> 
+          <div><input type="text" name="bankNumber"> </div>      
+          <div> Vorname Kunde: </div> 
+          <div><input type="text" name="firstName"> </div>       
+          <div> Nachname Kunde:</div> 
+          <div> <input type="text" name="lastName"> </div>      
+          <div> Kontostand: </div> 
+          <div><input type="text" name="balance"> </div>
+          <div> Überziehungsrahmen: </div>
+          <div><input type="number" name="overdraftLimit" min="0" max="2500"> </div>
+          <br>
+          <br> 
+          <button type="submit" id="btnAddCustomer"> Hinzufügen </button>
+        </form>
+        <div id="error-field"><p id="error-info"></p></div>
+        <div id="succed-field">
+          <p id="succed-info"></p>
+        </div>
+        <p></p> 
+        <hr>
+        <p></p> 
+        <h3>Suche:</h3>
+        <div>Alle Kunden anzeigen: 
+          <button id="showAllCustomers"> Anzeigen </button>
+        </div>
+        <p></p>
+        <div> Suche nach Kontonummer: 
+          <form id="searchAccountForm">
+            <input type="text" id="inAccountToSearch">
+            <button type="submit" id="btnSearchAccount"> Suchen </button> 
+          </form>
+        </div>
+        <hr>
+        <p></p> 
+        <h3>Geld der Konten erhöhen:</h3>
+        <form id="increaseDepositForm"> Geldbetrag:
+          <input type="text" name="increaseDeposit">
+          <button type="submit"> Erhöhen </button>
+        </form>
+        <hr>
+        <p></p> 
+        <h3>Kunden einer Bank entfernen</h3>
+        <form id="deleteBankNameAccountsForm">  Bankname: 
+          <input type="text" name="deleteBankNameAccountsInput">
+          <button type="submit"> Löschen </button>
+        </form>
+        <p id="showAllCustomersOutput"></p>
+      </div>
+      <div class="jumbotron">
+        <h3>Ausgabeinfos:</h3>
+        <button id="sortBankAccounts">Nach Kontostand sortieren</button>
+        <div id="outputInfos"></div>
+      </div>
+     
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
